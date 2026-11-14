@@ -1,31 +1,24 @@
 # Star Vanguard Siege
 
-Um jogo arcade de nave espacial inspirado no ritmo e na tensão dos shooters de naves de estilo "Galaxy Siege 2".
+Shooter espacial em HTML5 Canvas com cinco fases, inspirado no gênero arcade de naves.
 
 ## Como jogar
 
-- Abra o arquivo `index.html` em um navegador
-- ou rode um servidor local: `python -m http.server 8000`
-- depois acesse: `http://localhost:8000`
+Abra `index.html` em um navegador ou rode `python -m http.server 8000` e acesse `http://localhost:8000`.
 
 ## Controles
 
-- `WASD` ou setas: mover a nave
-- `Espaço`: disparar
-- `R`: reiniciar após a derrota
+- `WASD` ou setas: mover
+- `Espaço`: atirar
+- `Enter`: avançar depois de concluir uma fase
+- `R`: reiniciar depois de perder ou vencer
 
-## Objetivo
+## Fases
 
-- Destruir inimigos
-- Acumular pontos
-- Sobreviver às ondas e coletar bônus
+1. Cinco inimigos normais.
+2. Cinco inimigos normais e três naves laranjas com dois pontos de vida.
+3. Um mini-chefe com barra de vida e tiros em leque.
+4. Cinco normais, três inimigos laranjas de dois pontos de vida e três blindados de três pontos de vida.
+5. Chefão final com o dobro da vida do mini-chefe, tiros em leque, invocação de kamikazes em duplas e laser com aviso visual antes do disparo.
 
-## Estrutura
-
-- `index.html` — interface principal
-- `style.css` — estilo visual
-- `game.js` — lógica do jogo
-
-## Observação
-
-Este projeto foi criado como uma versão leve e jogável em HTML5/Canvas, sem dependências externas.
+Inimigos normais valem 5 pontos; inimigos de duas vidas, 10; blindados de três vidas, 15; mini-chefe, 20. Cada inimigo destruído toca um efeito sonoro de explosão (o áudio é ativado após uma interação com o jogo, conforme as regras do navegador).
