@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Vanguard Siege</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud">
+        <div class="hud-block">
+          <span class="label">PONTOS</span>
+          <span id="score">0</span>
+        </div>
+        <div class="hud-block">
+          <span class="label">ONDA</span>
+          <span id="wave">1</span>
+        </div>
+        <div class="hud-block">
+          <span class="label">VIDA</span>
+          <span id="health">100</span>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="600" aria-label="Jogo espacial"></canvas>
+
+      <div class="panel">
+        <h1>Star Vanguard Siege</h1>
+        <p>Movimente-se com <strong>WASD</strong> ou <strong>setas</strong>, atire com <strong>Espaço</strong> e sobreviva às ondas.</p>
+        <p>Inspiração: arcade de nave espacial, com ritmo intenso de “Galaxy Siege 2”.</p>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
